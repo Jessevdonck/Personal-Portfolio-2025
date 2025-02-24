@@ -1,6 +1,5 @@
 "use client";
 
-import { sendEmail } from "@/lib/resend";
 import { useRef } from "react";
 
 const Contact = () => {
@@ -12,9 +11,20 @@ const Contact = () => {
     const message = formData.get("message") as string;
 
     try {
-      await sendEmail({ name, email, message });
-      console.log("E-mail succesvol verzonden!");
-      formRef.current?.reset(); // Reset het formulier na verzending
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (response.ok) {
+        console.log("E-mail succesvol verzonden!");
+        formRef.current?.reset(); 
+      } else {
+        console.error("Fout bij het verzenden van de e-mail:", await response.json());
+      }
     } catch (error) {
       console.error("Fout bij het verzenden van de e-mail:", error);
     }
