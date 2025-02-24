@@ -1,9 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  env: {
-    RESEND_API_KEY: process.env.RESEND_API_KEY,
+const isProd = process.env.NODE_ENV === 'production';
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    unoptimized: true, 
   },
+  output: 'export'
 };
 
 export default nextConfig;
