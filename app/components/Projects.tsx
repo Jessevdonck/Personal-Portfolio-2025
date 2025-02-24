@@ -41,10 +41,10 @@ const projects: Project[] = [
     },
     {
       "title": "Personal Portfolio",
-      "description": "A modern personal portfolio website to showcase my projects and skills, built with Next.js and featuring a contact form powered by Resend.",
-      "longDescription": "This portfolio website was developed to present my work and skills in a clean and professional manner. Built with Next.js, it offers a fast and responsive user experience. The contact form is integrated with Resend, allowing visitors to send messages directly to my email. The project highlights my ability to work with modern web technologies, including React, TailwindCSS, and TypeScript, while also demonstrating my attention to design and user experience.",
+      "description": "A modern personal portfolio website to showcase my projects and skills, built with Next.js and featuring a contact form powered by Formspree.",
+      "longDescription": "This portfolio website was developed to present my work and skills in a clean and professional manner. Built with Next.js, it offers a fast and responsive user experience. The contact form is integrated with Formspree, allowing visitors to send messages directly to my email. The project highlights my ability to work with modern web technologies, including React, TailwindCSS, and TypeScript, while also demonstrating my attention to design and user experience.",
       "image": "/projects/portfolio.png",
-      "technologies": ["Next.js", "React", "TailwindCSS", "TypeScript", "Resend"],
+      "technologies": ["Next.js", "React", "TailwindCSS", "TypeScript", "Formspree"],
       "liveUrl": "https://jessevdonck.com"
     },
     

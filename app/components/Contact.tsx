@@ -11,7 +11,7 @@ const Contact = () => {
     const message = formData.get("message") as string;
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("https://formspree.io/f/xanqgjlr", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -21,6 +21,8 @@ const Contact = () => {
 
       if (response.ok) {
         console.log("E-mail succesvol verzonden!");
+       
+        alert("Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.");
         formRef.current?.reset(); 
       } else {
         console.error("Fout bij het verzenden van de e-mail:", await response.json());
@@ -34,7 +36,12 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-olive-100">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-olive-900 mb-8">Contact Me</h2>
-        <form ref={formRef} action={send} className="max-w-lg mx-auto">
+        <form
+          ref={formRef}
+          action="https://formspree.io/f/mwkwpvoa" // Formspree URL
+          method="POST"
+          className="max-w-lg mx-auto"
+        >
           <div className="mb-4">
             <label htmlFor="name" className="block text-olive-800 mb-2">
               Name
