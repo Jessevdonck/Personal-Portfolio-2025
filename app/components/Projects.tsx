@@ -45,7 +45,6 @@ const projects: Project[] = [
       "longDescription": "This portfolio website was developed to present my work and skills in a clean and professional manner. Built with Next.js, it offers a fast and responsive user experience. The contact form is integrated with Resend, allowing visitors to send messages directly to my email. The project highlights my ability to work with modern web technologies, including React, TailwindCSS, and TypeScript, while also demonstrating my attention to design and user experience.",
       "image": "/projects/portfolio.png",
       "technologies": ["Next.js", "React", "TailwindCSS", "TypeScript", "Resend"],
-      "githubUrl": "https://github.com/Jessevdonck/Personal-Portfolio-2025",
       "liveUrl": "https://jessevdonck.com"
     },
     
