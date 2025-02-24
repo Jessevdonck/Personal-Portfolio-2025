@@ -25,7 +25,11 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "py-4" : "py-6"}`}>
       <nav className="container mx-auto px-6 flex justify-between items-center md:justify-center">
-        {!isScrolled && <div className="text-olive-50 font-semibold text-xl absolute left-6">Jesse V.</div>}
+        {!isScrolled && (
+          <Link href={"#hero"} className="abo">
+            <div className="text-olive-50 font-semibold text-xl absolute left-6">Jesse V.</div>
+          </Link>
+        )}
         <div className="md:hidden ml-auto">
           <button
             onClick={toggleMenu}
