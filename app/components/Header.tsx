@@ -26,6 +26,11 @@ const Header = () => {
           }`}
         >
           <li>
+            <Link href="#hero" className="text-olive-50 hover:text-olive-200 transition-colors">
+              Home
+            </Link>
+          </li>
+          <li>
             <Link href="#about" className="text-olive-50 hover:text-olive-200 transition-colors">
               About
             </Link>
