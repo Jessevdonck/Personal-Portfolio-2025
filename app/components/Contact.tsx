@@ -80,7 +80,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="bg-olive-600 text-white py-2 px-4 rounded-md hover:bg-olive-700 transition-colors"
+            className="bg-olive-700 text-white py-2 px-4 rounded-md hover:bg-olive-800 transition-colors"
           >
             Send Message
           </button>
