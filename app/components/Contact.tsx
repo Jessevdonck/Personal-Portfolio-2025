@@ -38,7 +38,7 @@ const Contact = () => {
         <h2 className="text-3xl font-bold text-olive-900 mb-8">Contact Me</h2>
         <form
           ref={formRef}
-          action="https://formspree.io/f/mwkwpvoa" // Formspree URL
+          action="https://formspree.io/f/xanqgjlr" // Formspree URL
           method="POST"
           className="max-w-lg mx-auto"
         >
