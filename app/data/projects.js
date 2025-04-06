@@ -1,0 +1,30 @@
+const projects = [
+    {
+      "title": "Webservice for KSKcolle",
+      "description": "A modern website for KSKcolle, a chess club, featuring tournament management, player administration, and an up-to-date calendar.",
+      "longDescription": "This website is a complete overhaul for KSKcolle, a chess club that previously relied on an outdated website. The new website includes a backend built with Koa, making it easy to manage tournaments, players, and the calendar. The frontend, developed in NextJS, offers a warm and modern design that is user-friendly and easy to navigate. The goal was to create an intuitive experience for both members and visitors.",
+      "image": "/projects/kskcolle.png",
+      "technologies": ["NextJS", "Koa", "Node.js", "MySQL", "React", "TailwindCSS", "TypeScript"],
+      "githubUrl": "https://github.com/Jessevdonck/KSKColle",
+      "liveUrl": "https://frontendweb-kskcolle.onrender.com/"
+    },
+    {
+      "title": "Kingdomino",
+      "description": "A digitalized version of the popular board game Kingdomino, developed as a group project during my first year of college.",
+      "longDescription": "This project marked my first experience developing a complete project in Java. The goal was to create a digital version of the board game Kingdomino, using JavaFX for the graphical interface and MySQL for storing game data. The project required strong teamwork and a structured approach to translate the complexity of the game into a functional application. This project significantly improved my foundational knowledge of Java, object-oriented programming, and database management.",
+      "image": "/projects/kingdomino.jpg",
+      "technologies": ["Java", "JavaFX", "MySQL"],
+      "githubUrl": "https://github.com/Jessevdonck/Kingdomino",
+      },
+      {
+        "title": "Personal Portfolio",
+        "description": "A modern personal portfolio website to showcase my projects and skills, built with Next.js and featuring a contact form powered by Formspree.",
+        "longDescription": "This portfolio website was developed to present my work and skills in a clean and professional manner. Built with Next.js, it offers a fast and responsive user experience. The contact form is integrated with Formspree, allowing visitors to send messages directly to my email. The project highlights my ability to work with modern web technologies, including React, TailwindCSS, and TypeScript, while also demonstrating my attention to design and user experience.",
+        "image": "/projects/portfolio.png",
+        "technologies": ["Next.js", "React", "TailwindCSS", "TypeScript", "Formspree"],
+        "liveUrl": "https://jessevdonck.com"
+      },
+      
+  ]
+
+  export default projects;
