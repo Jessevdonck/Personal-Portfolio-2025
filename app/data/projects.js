@@ -16,15 +16,22 @@ const projects = [
       "technologies": ["Java", "JavaFX", "MySQL"],
       "githubUrl": "https://github.com/Jessevdonck/Kingdomino",
       },
-      {
-        "title": "Personal Portfolio",
-        "description": "A modern personal portfolio website to showcase my projects and skills, built with Next.js and featuring a contact form powered by Formspree.",
-        "longDescription": "This portfolio website was developed to present my work and skills in a clean and professional manner. Built with Next.js, it offers a fast and responsive user experience. The contact form is integrated with Formspree, allowing visitors to send messages directly to my email. The project highlights my ability to work with modern web technologies, including React, TailwindCSS, and TypeScript, while also demonstrating my attention to design and user experience.",
-        "image": "/projects/portfolio.png",
-        "technologies": ["Next.js", "React", "TailwindCSS", "TypeScript", "Formspree"],
-        "liveUrl": "https://jessevdonck.com"
-      },
-      
+      // {
+      //   "title": "Personal Portfolio",
+      //   "description": "A modern personal portfolio website to showcase my projects and skills, built with Next.js and featuring a contact form powered by Formspree.",
+      //   "longDescription": "This portfolio website was developed to present my work and skills in a clean and professional manner. Built with Next.js, it offers a fast and responsive user experience. The contact form is integrated with Formspree, allowing visitors to send messages directly to my email. The project highlights my ability to work with modern web technologies, including React, TailwindCSS, and TypeScript, while also demonstrating my attention to design and user experience.",
+      //   "image": "/projects/portfolio.png",
+      //   "technologies": ["Next.js", "React", "TailwindCSS", "TypeScript", "Formspree"],
+      //   "liveUrl": "https://jessevdonck.com"
+      // },
+        {
+          "title": "Shopfloor Application",
+          "description": "A shopfloor application for Delaware, developed as part of a school project. The app manages machines, users, maintenance, and notifications.",
+          "longDescription": "As part of a school project, I built a shopfloor application for Delaware, acting as the real client. The app, developed with Java, JavaFX, JPA, and MariaDB, allows management of machines, users, maintenance, and notifications, with real-time notification support.",
+          "image": "/projects/shopfloorDelaware.png",
+          "technologies": ["Java", "JPA", "JavaFX", "MariaDB"],
+          "githubUrl": "https://github.com/Jessevdonck/shopfloor-delaware",
+        },
   ]
 
   export default projects;
