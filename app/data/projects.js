@@ -36,7 +36,7 @@ const projects = [
           "title": "Reagent Gamejam 2025 - The Not-So-Handyman",
           "description": "A humorous and chaotic 2D game created during the first edition of the Reagent Gamejam, where we took first place with our interpretation of the theme 'tinkering'.",
           "longDescription": "The Not-So-Handyman was developed in just a few days during the inaugural Reagent Gamejam — a team-based competition (2–5 people) centered around the theme 'tinkering'. Together with Jordan Bentkowski, I was involved in every aspect of the creative process: programming in C# with Unity, creating visuals with Aseprite, designing sound effects and music in FL Studio, and refining the overall game feel. The result is a lighthearted, chaotic game where players take on the role of an incompetent handyman trying (and often failing) to complete tasks. This project showcases my versatility across both technical and artistic domains.",
-          "image": "/projects/reagentGameJam.png",
+          "image": "/projects/reagentGameJam2025.png",
           "technologies": ["Unity", "C#", "Aseprite", "FL Studio"],
           "liveUrl": "https://jessevdonck.itch.io/the-not-so-handyman",
           "githubUrl": "https://github.com/Jessevdonck/Reagent-GameJam2025"
