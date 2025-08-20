@@ -6,7 +6,7 @@ const projects = [
       "image": "/projects/kskcolle.png",
       "technologies": ["NextJS", "Koa", "Node.js", "MySQL", "React", "TailwindCSS", "TypeScript"],
       "githubUrl": "https://github.com/Jessevdonck/KSKColle",
-      "liveUrl": "https://frontendweb-kskcolle.onrender.com/"
+      "liveUrl": "https://kskcolle-production.up.railway.app/"
     },
     {
       "title": "Kingdomino",
