@@ -64,7 +64,7 @@ const projects = [
       "I made this website for the chess club in Kalken. They are a starting chess club that desperately needed a website. This is why I provided a static website that suited all of their needs",
     image: "/projects/kalken.png",
     technologies: ["React", "NextJS", "JavaScript", "TailwindCSS"],
-    liveUrl: "www.schaakclubkalken.be",
+    liveUrl: "https://schaakclubkalken.be/",
     githubUrl: "http://github.com/Jessevdonck/Schaakclub-Kalken/",
   },
 ];
