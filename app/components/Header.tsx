@@ -37,7 +37,7 @@ const Header = () => {
         <div className="md:hidden ml-auto">
           <button
             onClick={toggleMenu}
-            className={`transition-colors ${isScrolled ? "text-olive-900" : "text-olive-50"} hover:text-olive-200`}
+            className={`transition-colors ${isScrolled ? "text-olive-900" : "text-olive-50"} hover:text-white`}
           >
             <Menu size={24} />
           </button>
@@ -52,7 +52,7 @@ const Header = () => {
           <li>
             <Link
               href="#about"
-              className="text-olive-50 hover:text-olive-200 transition-colors"
+              className="text-olive-50 hover:text-white transition-colors"
             >
               About
             </Link>
@@ -60,7 +60,7 @@ const Header = () => {
           <li>
             <Link
               href="#experience"
-              className="text-olive-50 hover:text-olive-200 transition-colors"
+              className="text-olive-50 hover:text-white transition-colors"
             >
               Experience
             </Link>
@@ -68,7 +68,7 @@ const Header = () => {
           <li>
             <Link
               href="#projects"
-              className="text-olive-50 hover:text-olive-200 transition-colors"
+              className="text-olive-50 hover:text-white transition-colors"
             >
               Projects
             </Link>
@@ -76,7 +76,7 @@ const Header = () => {
           <li>
             <Link
               href="#contact"
-              className="text-olive-50 hover:text-olive-200 transition-colors"
+              className="text-olive-50 hover:text-white transition-colors"
             >
               Contact
             </Link>
@@ -87,7 +87,7 @@ const Header = () => {
         <div className="fixed inset-0 bg-olive-900/90 backdrop-blur-md z-50 flex items-center justify-center md:hidden">
           <button
             onClick={toggleMenu}
-            className="absolute top-6 right-6 text-olive-50 hover:text-olive-200 transition-colors"
+            className="absolute top-6 right-6 text-olive-50 hover:text-white transition-colors"
           >
             <X size={24} />
           </button>
@@ -95,7 +95,7 @@ const Header = () => {
             <li>
               <Link
                 href="#about"
-                className="text-olive-50 hover:text-olive-200 transition-colors text-2xl"
+                className="text-olive-50 hover:text-white transition-colors text-2xl"
                 onClick={toggleMenu}
               >
                 About
@@ -104,7 +104,7 @@ const Header = () => {
             <li>
               <Link
                 href="#experience"
-                className="text-olive-50 hover:text-olive-200 transition-colors text-2xl"
+                className="text-olive-50 hover:text-white transition-colors text-2xl"
                 onClick={toggleMenu}
               >
                 Experience
@@ -113,7 +113,7 @@ const Header = () => {
             <li>
               <Link
                 href="#projects"
-                className="text-olive-50 hover:text-olive-200 transition-colors text-2xl"
+                className="text-olive-50 hover:text-white transition-colors text-2xl"
                 onClick={toggleMenu}
               >
                 Projects
@@ -122,7 +122,7 @@ const Header = () => {
             <li>
               <Link
                 href="#contact"
-                className="text-olive-50 hover:text-olive-200 transition-colors text-2xl"
+                className="text-olive-50 hover:text-white transition-colors text-2xl"
                 onClick={toggleMenu}
               >
                 Contact

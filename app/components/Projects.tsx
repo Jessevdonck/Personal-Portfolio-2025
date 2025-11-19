@@ -43,7 +43,15 @@ const ProjectCard = ({ project }: { project: Project }) => {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-2xl">
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+        <Image
+          src={project.image || "/placeholder.svg"}
+          alt={project.title}
+          width={2000}
+          height={1000}
+          className="w-full h-64 object-cover rounded-lg mb-4"
+          quality={100}
+        />
         <DialogHeader>
           <DialogTitle className="text-2xl text-olive-900">
             {project.title}

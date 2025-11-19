@@ -63,12 +63,8 @@ export default function ExperienceTimeline() {
           Experience
         </h2>
 
-        {/* Vertical Timeline */}
         <div className="relative">
-          {/* Center line */}
           <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-olive-200 -translate-x-1/2" />
-
-          {/* Timeline items */}
           <div className="space-y-12">
             {timelineData.map((item, index) => (
               <div
@@ -77,7 +73,6 @@ export default function ExperienceTimeline() {
                 onMouseEnter={() => setHoveredId(item.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
-                {/* Left/Right content */}
                 <div className="w-1/2">
                   <div
                     className={`p-6 rounded-lg transition-all duration-300 cursor-pointer ${
@@ -103,7 +98,6 @@ export default function ExperienceTimeline() {
                       )}
                     </div>
 
-                    {/* Description - only visible on hover, more height */}
                     <div
                       className={`overflow-hidden transition-all duration-300 ${
                         hoveredId === item.id
@@ -130,19 +124,16 @@ export default function ExperienceTimeline() {
                     </div>
                   </div>
                 </div>
-
-                {/* Center dot */}
                 <div className="w-12 flex items-start justify-center">
                   <div
                     className={`w-4 h-4 rounded-full border-4 transition-all duration-300 ${
                       hoveredId === item.id
-                        ? "bg-olive-600 border-olive-900 scale-150"
+                        ? "bg-olive-600 border-olive-600 scale-125"
                         : "bg-white border-olive-300"
                     }`}
                   />
                 </div>
 
-                {/* Empty right/left space */}
                 <div className="w-1/2" />
               </div>
             ))}
