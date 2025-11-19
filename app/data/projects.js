@@ -58,10 +58,11 @@ const projects = [
     githubUrl: "https://github.com/Jessevdonck/Reagent-GameJam2025",
   },
   {
-    title: "Website for chess club Kalken",
-    description: "A static website for the chess club in Kalken.",
+    title: "Chess Club Kalken",
+    description:
+      "A modern and informative static website created for the newly founded chess club in Kalken.",
     longDescription:
-      "I made this website for the chess club in Kalken. They are a starting chess club that desperately needed a website. This is why I provided a static website that suited all of their needs",
+      "This project involves building a clean, fast, and fully responsive static website for the chess club in Kalken. As a young and growing organization, the club needed an online presence to inform new members, share updates, and present their activities in a professional way. I designed a simple yet recognizable visual identity and delivered a lightweight website that fits all their current needs while giving them the flexibility to expand in the future.",
     image: "/projects/kalken.png",
     technologies: ["React", "NextJS", "JavaScript", "TailwindCSS"],
     liveUrl: "https://schaakclubkalken.be/",

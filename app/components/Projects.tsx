@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { ExternalLink, Github } from "lucide-react"
+import Image from "next/image";
+import { ExternalLink, Github } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -9,20 +9,18 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
-import projects from "../data/projects"
+} from "@/components/ui/dialog";
+import projects from "../data/projects";
 
 type Project = {
-  title: string
-  description: string
-  image: string
-  longDescription?: string
-  technologies: string[]
-  githubUrl?: string
-  liveUrl?: string
-}
-
-
+  title: string;
+  description: string;
+  image: string;
+  longDescription?: string;
+  technologies: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+};
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
@@ -38,21 +36,32 @@ const ProjectCard = ({ project }: { project: Project }) => {
             quality={100}
           />
           <div className="p-6">
-            <h3 className="text-xl font-semibold text-olive-900 mb-2">{project.title}</h3>
+            <h3 className="text-xl font-semibold text-olive-900 mb-2">
+              {project.title}
+            </h3>
             <p className="text-olive-700">{project.description}</p>
           </div>
         </div>
       </DialogTrigger>
       <DialogContent className="max-w-2xl">
         <DialogHeader>
-          <DialogTitle className="text-2xl text-olive-900">{project.title}</DialogTitle>
-          <DialogDescription className="text-olive-700 mt-4">{project.longDescription}</DialogDescription>
+          <DialogTitle className="text-2xl text-olive-900">
+            {project.title}
+          </DialogTitle>
+          <DialogDescription className="text-olive-700 mt-4">
+            {project.longDescription}
+          </DialogDescription>
         </DialogHeader>
         <div className="mt-6">
-          <h4 className="font-semibold text-olive-900 mb-2">Technologies Used:</h4>
+          <h4 className="font-semibold text-olive-900 mb-2">
+            Technologies Used:
+          </h4>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, index) => (
-              <span key={index} className="px-3 py-1 bg-olive-100 text-olive-800 rounded-full text-sm">
+              <span
+                key={index}
+                className="px-3 py-1 bg-olive-100 text-olive-800 rounded-full text-sm"
+              >
                 {tech}
               </span>
             ))}
@@ -84,8 +93,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
         </div>
       </DialogContent>
     </Dialog>
-  )
-}
+  );
+};
 
 const Projects = () => {
   return (
@@ -99,8 +108,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
-
+export default Projects;
