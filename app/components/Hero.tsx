@@ -19,13 +19,13 @@ const Hero = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="absolute inset-0 bg-olive-900/40" /> 
+          <div className="absolute inset-0 bg-olive-900/40" />
         </div>
-  
+
         <div className="relative z-10 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Jesse Vaerendonck</h1>
           <p className="text-xl md:text-2xl text-olive-100 drop-shadow">
-            Applied Information Technology Student & Aspiring Full Stack Developer
+            Full Stack Developer
           </p>
         </div>
 
@@ -39,7 +39,5 @@ const Hero = () => {
       </section>
     )
   }
-  
+
   export default Hero
-  
-  
