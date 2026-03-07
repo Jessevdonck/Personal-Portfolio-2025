@@ -58,7 +58,7 @@ const timelineData: TimelineItem[] = [
     period: "February 2026 - May 2026",
     description:
       'Built an internal “Who’s Who” search platform using .NET, Elasticsearch, and Blazor, allowing users to find employees, vessels, and construction sites.',
-    skills: ["C#", ".NET", "Blazor", "SQL Server", "Elasticsearch", "Refit", "REST APIs", "CSS"]
+    skills: ["C#", ".NET", "Blazor", "SQL Server", "Elasticsearch", "Refit", "REST APIs", "CSS"],
     isAward: false,
   },
 ];
