@@ -32,16 +32,7 @@ const timelineData: TimelineItem[] = [
       "Managed and maintained the chess website, ensuring optimal performance and user experience.",
     skills: ["NextJS", "Tailwind", "Node.js"],
   },
-  {
-    id: 3,
-    position: "Webmaster",
-    company: "Chess Club Kalken",
-    period: "2025 - Present",
-    description:
-      "Managed and maintained the chess website, ensuring optimal performance and user experience.",
-    skills: ["NextJS", "Tailwind"],
-  },
-  {
+    {
     id: 4,
     position: "Reagent Game Jam",
     company: "HoGent",
@@ -50,6 +41,15 @@ const timelineData: TimelineItem[] = [
       'Participated in the first edition of the Reagent Game Jam at HOGENT. Together with Jordan Bentkowski, I developed the game "The Not-So-Handyman", which won the award for Best Fun Game. The theme was tinkering, and the game focused on a handyman with a gambling addiction who keeps losing his earnings playing blackjack.',
     skills: ["Unity", "C#", "Aseprite", "Fl Studio"],
     isAward: true,
+  },
+  {
+    id: 3,
+    position: "Webmaster",
+    company: "Chess Club Kalken",
+    period: "2025 - Present",
+    description:
+      "Managed and maintained the chess website, ensuring optimal performance and user experience.",
+    skills: ["NextJS", "Tailwind"],
   },
 {
     id: 5,
