@@ -3,46 +3,47 @@ import Image from "next/image";
 const About = () => {
   return (
     <section id="about" className="py-20 bg-olive-50">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-olive-900 mb-12 text-center">
-          About Me
-        </h2>
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <div className="relative h-[500px] w-full">
+      <div className="container mx-auto px-6 max-w-5xl">
+        <h2 className="text-3xl font-bold text-olive-900 mb-12">About Me</h2>
+
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg">
             <Image
               src="/aboutme.jpg"
               alt="Jesse Vaerendonck"
               fill
-              className="object-cover rounded-lg shadow-xl"
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 480px"
+              priority
             />
           </div>
-          <div className="space-y-6">
-            <p className="text-lg text-olive-800">
-              I'm a second-year Applied Information Technology student at
-              HoGent, passionate about full-stack development. With a keen
-              interest in both front-end and back-end technologies, I'm
-              constantly learning and working on projects to enhance my skills
-              and create meaningful applications.
+
+          <div className="space-y-8 text-olive-800">
+            <p className="text-lg leading-relaxed">
+              I&apos;m a full-stack developer with a background in Applied
+              Information Technology from HoGent. I enjoy working across the
+              entire stack, from clear, responsive interfaces to reliable
+              back-ends, and I like turning ideas into software that people
+              actually use, whether that&apos;s in a professional role, for
+              clients, or through personal projects.
             </p>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-olive-900">
-                Education
-              </h3>
-              <p className="text-olive-800">
+
+            <div>
+              <h3 className="font-semibold text-olive-900 mb-2">Education</h3>
+              <p className="leading-relaxed">
                 Applied Information Technology
                 <br />
                 HoGent University of Applied Sciences
                 <br />
-                2022 - Present
+                Graduated 2026
               </p>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-olive-900">
-                Interests
-              </h3>
-              <p className="text-olive-800">
-                Full Stack Development, Web Technologies, Software Architecture,
-                Problem Solving, Politics and Philosophy
+
+            <div>
+              <h3 className="font-semibold text-olive-900 mb-2">Interests</h3>
+              <p className="leading-relaxed">
+                Full-stack development, web technologies, software
+                architecture, problem solving, politics and philosophy.
               </p>
             </div>
           </div>
