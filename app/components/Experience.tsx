@@ -23,7 +23,7 @@ const timelineData: TimelineItem[] = [
       "Developed full-stack applications and implemented new features for the Signpost platform.",
     skills: ["React", "PHP", ".NET", "C#", "Grafana"],
   },
-    {
+  {
     id: 2,
     position: "Webmaster",
     company: "KSK Colle",
@@ -31,16 +31,6 @@ const timelineData: TimelineItem[] = [
     description:
       "Managed and maintained the chess website, ensuring optimal performance and user experience.",
     skills: ["NextJS", "Tailwind", "Node.js"],
-  },
-    {
-    id: 4,
-    position: "Reagent Game Jam",
-    company: "HoGent",
-    period: "April 2024",
-    description:
-      'Participated in the first edition of the Reagent Game Jam at HOGENT. Together with Jordan Bentkowski, I developed the game "The Not-So-Handyman", which won the award for Best Fun Game. The theme was tinkering, and the game focused on a handyman with a gambling addiction who keeps losing his earnings playing blackjack.',
-    skills: ["Unity", "C#", "Aseprite", "Fl Studio"],
-    isAward: true,
   },
   {
     id: 3,
@@ -51,14 +41,23 @@ const timelineData: TimelineItem[] = [
       "Managed and maintained the chess website, ensuring optimal performance and user experience.",
     skills: ["NextJS", "Tailwind"],
   },
-{
+  {
     id: 5,
     position: "Internship Software Developer",
     company: "Jan De Nul",
     period: "February 2026 - May 2026",
     description:
-      'Built an internal “Who’s Who” search platform using .NET, Elasticsearch, and Blazor, allowing users to find employees, vessels, and construction sites.',
-    skills: ["C#", ".NET", "Blazor", "SQL Server", "Elasticsearch", "Refit", "REST APIs", "CSS"],
+      "Built an internal “Who’s Who” search platform using .NET, Elasticsearch, and Blazor, allowing users to find employees, vessels, and construction sites.",
+    skills: [
+      "C#",
+      ".NET",
+      "Blazor",
+      "SQL Server",
+      "Elasticsearch",
+      "Refit",
+      "REST APIs",
+      "CSS",
+    ],
     isAward: false,
   },
 ];

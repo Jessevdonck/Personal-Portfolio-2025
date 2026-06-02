@@ -21,11 +21,16 @@ const Contact = () => {
 
       if (response.ok) {
         console.log("E-mail succesvol verzonden!");
-       
-        alert("Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.");
-        formRef.current?.reset(); 
+
+        alert(
+          "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.",
+        );
+        formRef.current?.reset();
       } else {
-        console.error("Fout bij het verzenden van de e-mail:", await response.json());
+        console.error(
+          "Fout bij het verzenden van de e-mail:",
+          await response.json(),
+        );
       }
     } catch (error) {
       console.error("Fout bij het verzenden van de e-mail:", error);

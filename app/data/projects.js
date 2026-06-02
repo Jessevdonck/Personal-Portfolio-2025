@@ -58,6 +58,17 @@ const projects = [
     githubUrl: "https://github.com/Jessevdonck/Reagent-GameJam2025",
   },
   {
+    title: "Reagent Gamejam 2026 - A Ritual Gone Wrong",
+    description:
+      "A chaotic 2D action game made during the Reagent Gamejam 2026, where we won the public choice award with our unique take on the theme 'alchemy'.",
+    longDescription:
+      "A Ritual Gone Wrong was created during the Reagent Gamejam 2026, a fast-paced game development competition, built around the theme 'alchemy'. Developed together with Jordan Bentkowski, the game follows a character stuck in purgatory after a ritual goes horribly wrong. Players must fight off waves of enemies, gather resources, and brew powerful potions to grow stronger and progress further. Despite the strict time limits of the jam, we managed to deliver a compelling gameplay loop. I was involved in the core development and creative process alongside Jordan, while Jerome Malfliet and Ferre Roelandt provided the game's soundtrack. The project marks our second consecutive year winning an award at this game jam.",
+    image: "/projects/reagentGameJam2026.jpg",
+    technologies: ["Unity", "C#", "Aseprite", "FL Studio"],
+    liveUrl: "https://jessevdonck.itch.io/a-ritual-gone-wrong",
+    githubUrl: "https://github.com/Jessevdonck/AlchemyGameJam2026",
+  },
+  {
     title: "Chess Club Kalken",
     description:
       "A modern and informative static website created for the newly founded chess club in Kalken.",
