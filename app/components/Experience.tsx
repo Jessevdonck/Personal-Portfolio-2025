@@ -147,7 +147,7 @@ function ExperienceCard({ item }: { item: TimelineItem }) {
 
 export default function ExperienceTimeline() {
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-24 sm:py-28 bg-white">
       <div className="container mx-auto px-6 max-w-3xl">
         <motion.div
           initial="hidden"
@@ -155,15 +155,15 @@ export default function ExperienceTimeline() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
           variants={fadeUp}
-          className="mb-14 text-center"
+          className="mb-14"
         >
           <p className="text-sm font-semibold uppercase tracking-widest text-olive-600 mb-3">
             Career path
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-olive-900">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-olive-900">
             Experience
           </h2>
-          <p className="mt-4 text-olive-700 max-w-lg mx-auto">
+          <p className="mt-4 text-olive-700 max-w-lg">
             From internships and client work to maintaining live products
           </p>
         </motion.div>

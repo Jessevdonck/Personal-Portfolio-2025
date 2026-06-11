@@ -2,12 +2,19 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-olive-50">
+    <section id="about" className="py-24 sm:py-28 bg-olive-50">
       <div className="container mx-auto px-6 max-w-5xl">
-        <h2 className="text-3xl font-bold text-olive-900 mb-12">About Me</h2>
+        <div className="mb-14">
+          <p className="text-sm font-semibold uppercase tracking-widest text-olive-600 mb-3">
+            Who I am
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-olive-900">
+            About Me
+          </h2>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
             <Image
               src="/aboutme.jpg"
               alt="Jesse Vaerendonck"
@@ -29,7 +36,9 @@ const About = () => {
             </p>
 
             <div>
-              <h3 className="font-semibold text-olive-900 mb-2">Education</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-olive-600 mb-3">
+                Education
+              </h3>
               <p className="leading-relaxed">
                 Applied Information Technology
                 <br />
@@ -40,7 +49,9 @@ const About = () => {
             </div>
 
             <div>
-              <h3 className="font-semibold text-olive-900 mb-2">Interests</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-olive-600 mb-3">
+                Interests
+              </h3>
               <p className="leading-relaxed">
                 Full-stack development, web technologies, software
                 architecture, problem solving, politics and philosophy.

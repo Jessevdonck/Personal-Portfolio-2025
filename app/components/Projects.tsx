@@ -188,7 +188,7 @@ const Projects = () => {
   const [featured, ...rest] = projects;
 
   return (
-    <section id="projects" className="py-20 bg-olive-50">
+    <section id="projects" className="py-24 sm:py-28 bg-olive-50">
       <div className="container mx-auto px-6 max-w-6xl">
         <motion.div
           initial="hidden"
@@ -196,15 +196,15 @@ const Projects = () => {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
           variants={fadeUp}
-          className="mb-14 text-center"
+          className="mb-14"
         >
           <p className="text-sm font-semibold uppercase tracking-widest text-olive-600 mb-3">
             Selected work
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-olive-900">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-olive-900">
             Projects
           </h2>
-          <p className="mt-4 text-olive-700 max-w-xl mx-auto">
+          <p className="mt-4 text-olive-700 max-w-xl">
             A mix of client work, school projects, and game jam wins
           </p>
         </motion.div>

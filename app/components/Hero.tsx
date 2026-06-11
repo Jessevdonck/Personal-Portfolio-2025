@@ -8,7 +8,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
+    <section
+      data-cursor="light"
+      className="relative min-h-screen flex items-center justify-center"
+    >
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -19,24 +22,25 @@ const Hero = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="absolute inset-0 bg-olive-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-olive-900/30 via-olive-900/40 to-olive-900/60" />
       </div>
 
-      <div className="relative z-10 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+      <div className="relative z-10 text-center px-6">
+        <p className="text-xs md:text-sm font-medium uppercase tracking-[0.3em] text-olive-200 mb-5">
+          Full Stack Developer | Belgium
+        </p>
+        <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-white">
           Jesse Vaerendonck
         </h1>
-        <p className="text-xl md:text-2xl text-olive-100 drop-shadow">
-          Full Stack Developer based in <strong>Belgium</strong>
-        </p>
       </div>
 
-      {/* Arrow dropdown */}
+      {/* Scroll indicator */}
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-white cursor-pointer transition-transform hover:translate-y-1"
+        aria-label="Scroll to about"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-white/70 transition-colors hover:text-white"
       >
-        <ChevronDown className="w-8 h-8 animate-bounce" />
+        <ChevronDown className="w-6 h-6 animate-bounce" strokeWidth={1.5} />
       </button>
     </section>
   );

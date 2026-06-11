@@ -74,7 +74,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-24 sm:py-28 bg-white">
       <div className="container mx-auto px-6 max-w-5xl">
         <motion.div
           initial="hidden"
@@ -82,15 +82,15 @@ const Contact = () => {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
           variants={fadeUp}
-          className="mb-14 text-center"
+          className="mb-14"
         >
           <p className="text-sm font-semibold uppercase tracking-widest text-olive-600 mb-3">
             Get in touch
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-olive-900">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-olive-900">
             Contact
           </h2>
-          <p className="mt-4 text-olive-700 max-w-lg mx-auto">
+          <p className="mt-4 text-olive-700 max-w-lg">
             Have a question, opportunity, or just want to say hi? Send a
             message, I usually reply within a few days.
           </p>
@@ -114,6 +114,23 @@ const Contact = () => {
                 collaboration on a project, I&apos;d love to hear from you.
               </p>
             </div>
+
+            <ul className="space-y-3">
+              {socialLinks.map(({ label, href, icon: Icon }) => (
+                <li key={label}>
+                  <Link
+                    href={href}
+                    target={href.startsWith("http") ? "_blank" : undefined}
+                    className="group inline-flex items-center gap-3 text-olive-700 transition-colors hover:text-olive-900"
+                  >
+                    <span className="flex h-9 w-9 items-center justify-center rounded-full border border-olive-200 transition-colors group-hover:border-olive-400">
+                      <Icon className="h-4 w-4" />
+                    </span>
+                    <span className="text-sm font-medium">{label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </aside>
 
           <div className="lg:col-span-3">
