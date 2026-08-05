@@ -8,10 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section
-      data-cursor="light"
-      className="relative min-h-screen flex items-center justify-center"
-    >
+    <section className="relative min-h-screen flex items-center justify-center">
       <div
         className="absolute inset-0 z-0"
         style={{

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import CustomCursor from "./components/CustomCursor";
 
 export const metadata: Metadata = {
   title: "Jesse Vaerendonck",
@@ -21,7 +20,6 @@ export default function RootLayout({
       <body
         className={`antialiased ${inter.className} bg-warm-50 text-warm-900`}
       >
-        <CustomCursor />
         {children}
       </body>
     </html>

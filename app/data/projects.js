@@ -69,6 +69,17 @@ const projects = [
     githubUrl: "https://github.com/Jessevdonck/AlchemyGameJam2026",
   },
   {
+    title: "Guitar Neck",
+    description:
+      "An interactive guitar fretboard in the browser, where you can click positions to reveal notes and mark a root note to visualize intervals.",
+    longDescription:
+      "Guitar Neck is a small tool I built for the guitar lessons at the Kunsthumaniora in Antwerp, to make learning the fretboard easier. Clicking a position reveals the note, a second click turns it into the root note, and a third click clears it again, which makes it simple to map out scales, chords and intervals by hand. The neck can be switched between 12, 15, 17, 19, 22 and 24 frets, notes can be displayed as sharps or flats, and an option to label the entire neck at once helps with orientation. Selections are stored in localStorage so your work survives a refresh, and the interface follows the system's light or dark theme. It is built with React, TypeScript and Vite as a fully static site with no backend, deployed automatically to GitHub Pages.",
+    image: "/projects/guitar-neck.png",
+    technologies: ["React", "TypeScript", "Vite", "CSS"],
+    liveUrl: "https://jessevdonck.github.io/guitar-neck/",
+    githubUrl: "https://github.com/Jessevdonck/guitar-neck",
+  },
+  {
     title: "Chess Club Kalken",
     description:
       "A modern and informative static website created for the newly founded chess club in Kalken.",

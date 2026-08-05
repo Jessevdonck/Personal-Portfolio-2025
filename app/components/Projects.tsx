@@ -36,91 +36,97 @@ function ProjectCard({
   featured?: boolean;
 }) {
   return (
-    <motion.article
-      variants={fadeUp}
-      className={`group relative overflow-hidden rounded-2xl border border-olive-200/80 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl ${
-        featured
-          ? "min-h-[360px] lg:min-h-full lg:col-span-4 lg:row-span-2"
-          : "min-h-[300px] lg:col-span-2"
-      }`}
-    >
-      <Image
-        src={project.image || "/placeholder.svg"}
-        alt={project.title}
-        fill
-        sizes={
+    <Dialog>
+      <motion.article
+        variants={fadeUp}
+        className={`group relative overflow-hidden rounded-2xl border border-olive-200/80 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl ${
           featured
-            ? "(max-width: 1024px) 100vw, 50vw"
-            : "(max-width: 1024px) 100vw, 33vw"
-        }
-        className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-        quality={90}
-      />
+            ? "min-h-[360px] lg:min-h-full lg:col-span-4 lg:row-span-2"
+            : "min-h-[300px] lg:col-span-2"
+        }`}
+      >
+        <Image
+          src={project.image || "/placeholder.svg"}
+          alt={project.title}
+          fill
+          sizes={
+            featured
+              ? "(max-width: 1024px) 100vw, 50vw"
+              : "(max-width: 1024px) 100vw, 33vw"
+          }
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          quality={90}
+        />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-olive-900/95 via-olive-900/50 to-olive-900/10 transition-opacity duration-300 group-hover:via-olive-900/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-olive-900/95 via-olive-900/50 to-olive-900/10 transition-opacity duration-300 group-hover:via-olive-900/70" />
 
-      <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-7">
-        <div className="translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
-          <p className="text-xs font-semibold uppercase tracking-widest text-olive-300 mb-2">
-            {project.technologies.slice(0, 3).join(" · ")}
-          </p>
-          <h3
-            className={`font-bold text-white leading-tight ${
-              featured ? "text-2xl sm:text-3xl" : "text-xl sm:text-2xl"
-            }`}
+        {/* The whole card opens the details dialog; the links below sit on top of it */}
+        <DialogTrigger asChild>
+          <button
+            type="button"
+            className="absolute inset-0 z-10 cursor-pointer rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-olive-900"
           >
-            {project.title}
-          </h3>
-          <p
-            className={`mt-2 text-olive-100/90 leading-relaxed ${
-              featured
-                ? "text-sm sm:text-base line-clamp-3"
-                : "text-sm line-clamp-2"
-            }`}
-          >
-            {project.description}
-          </p>
-        </div>
+            <span className="sr-only">Read more about {project.title}</span>
+          </button>
+        </DialogTrigger>
 
-        <div className="mt-5 flex flex-wrap items-center gap-2 opacity-100 translate-y-0 transition-all duration-300 lg:opacity-0 lg:translate-y-3 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:group-focus-within:opacity-100 lg:group-focus-within:translate-y-0">
-          <Dialog>
-            <DialogTrigger asChild>
-              <button
-                type="button"
-                className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-medium text-olive-900 transition-colors hover:bg-olive-100"
+        <div className="pointer-events-none absolute inset-0 z-20 flex flex-col justify-end p-6 sm:p-7">
+          <div className="translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
+            <p className="text-xs font-semibold uppercase tracking-widest text-olive-300 mb-2">
+              {project.technologies.slice(0, 3).join(" · ")}
+            </p>
+            <h3
+              className={`font-bold text-white leading-tight ${
+                featured ? "text-2xl sm:text-3xl" : "text-xl sm:text-2xl"
+              }`}
+            >
+              {project.title}
+            </h3>
+            <p
+              className={`mt-2 text-olive-100/90 leading-relaxed ${
+                featured
+                  ? "text-sm sm:text-base line-clamp-3"
+                  : "text-sm line-clamp-2"
+              }`}
+            >
+              {project.description}
+            </p>
+          </div>
+
+          <div className="mt-5 flex flex-wrap items-center gap-2 opacity-100 translate-y-0 transition-all duration-300 lg:opacity-0 lg:translate-y-3 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:group-focus-within:opacity-100 lg:group-focus-within:translate-y-0">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-medium text-olive-900">
+              Details
+              <ArrowUpRight className="h-4 w-4" />
+            </span>
+
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
               >
-                Details
-                <ArrowUpRight className="h-4 w-4" />
-              </button>
-            </DialogTrigger>
-            <ProjectDialogContent project={project} />
-          </Dialog>
-
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
-            >
-              <Github className="h-4 w-4" />
-              Code
-            </a>
-          )}
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
-            >
-              <ExternalLink className="h-4 w-4" />
-              Live
-            </a>
-          )}
+                <Github className="h-4 w-4" />
+                Code
+              </a>
+            )}
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Live
+              </a>
+            )}
+          </div>
         </div>
-      </div>
-    </motion.article>
+      </motion.article>
+
+      <ProjectDialogContent project={project} />
+    </Dialog>
   );
 }
 
