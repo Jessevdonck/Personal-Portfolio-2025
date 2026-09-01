@@ -17,11 +17,11 @@ interface TimelineItem {
 const timelineData: TimelineItem[] = [
   {
     id: 1,
-    position: "Junior Consultant",
+    position: ".NET Consultant",
     company: "Elmos",
     period: "Aug 2026 — Present",
     description:
-      "Working as a junior consultant at Elmos, contributing to client projects and delivering IT solutions.",
+      "Working as a .NET consultant at Elmos, contributing to client projects and delivering IT solutions.",
     current: true,
   },
   {
